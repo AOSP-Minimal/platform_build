@@ -30,7 +30,6 @@ PRODUCT_PACKAGES += \
     Contacts \
     DeskClock \
     DocumentsUI \
-    DownloadProviderUi \
     Email \
     ExactCalculator \
     ExternalStorageProvider \
