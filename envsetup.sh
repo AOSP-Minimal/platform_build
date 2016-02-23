@@ -521,6 +521,10 @@ function lunch()
         return 1
     fi
 
+    aosp_device=${selection:5}
+    aosp_device=${aosp_device%%-*}
+    export aosp_device
+
     export TARGET_BUILD_APPS=
 
     local product=$(echo -n $selection | sed -e "s/-.*$//")
