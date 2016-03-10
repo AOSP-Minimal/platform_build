@@ -22,23 +22,15 @@
 
 PRODUCT_PACKAGES += \
     BasicDreams \
-    Browser \
-    Calendar \
-    CalendarProvider \
     CaptivePortalLogin \
     CertInstaller \
     Contacts \
-    DeskClock \
-    DocumentsUI \
-    Email \
-    ExactCalculator \
     ExternalStorageProvider \
     FusedLocation \
     InputDevices \
     KeyChain \
     Keyguard \
     LatinIME \
-    Launcher2 \
     ManagedProvisioning \
     PicoTts \
     PacProcessor \

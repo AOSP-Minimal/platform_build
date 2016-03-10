@@ -42,7 +42,6 @@ PRODUCT_PACKAGES += \
     BackupRestoreConfirmation \
     DefaultContainerService \
     SettingsProvider \
-    Shell \
     bcc \
     bu \
     com.android.location.provider \
