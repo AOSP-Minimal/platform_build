@@ -25,6 +25,7 @@ PRODUCT_NAME := core
 PRODUCT_PACKAGES += \
     BackupRestoreConfirmation \
     DownloadProvider \
+    FileManager \
     MediaProvider \
     PackageInstaller \
     SettingsProvider \
