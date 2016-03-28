@@ -29,6 +29,7 @@ PRODUCT_PACKAGES += \
     MediaProvider \
     PackageInstaller \
     SettingsProvider \
+    Shell \
     StatementService \
     bcc \
     bu \
