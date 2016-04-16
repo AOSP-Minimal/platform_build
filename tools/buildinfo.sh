@@ -13,8 +13,13 @@ echo "ro.build.version.all_codenames=$PLATFORM_VERSION_ALL_CODENAMES"
 echo "ro.build.version.release=$PLATFORM_VERSION"
 echo "ro.build.version.security_patch=$PLATFORM_SECURITY_PATCH"
 echo "ro.build.version.base_os=$PLATFORM_BASE_OS"
-echo "ro.build.date=`date`"
-echo "ro.build.date.utc=`date +%s`"
+if [ "$TARGET_DEVICE" == "bullhead" ]; then
+  echo "ro.build.date=Wed Mar 23 03:40:46 UTC 2016"
+  echo "ro.build.date.utc=1458704446"
+else
+  echo "ro.build.date=`date`"
+  echo "ro.build.date.utc=`date +%s`"
+fi
 echo "ro.build.type=$TARGET_BUILD_TYPE"
 echo "ro.build.user=$USER"
 echo "ro.build.host=`hostname`"
@@ -50,7 +55,11 @@ echo "ro.build.product=$TARGET_DEVICE"
 
 echo "# Do not try to parse description, fingerprint, or thumbprint"
 echo "ro.build.description=$PRIVATE_BUILD_DESC"
-echo "ro.build.fingerprint=$BUILD_FINGERPRINT"
+if [ "$TARGET_DEVICE" == "bullhead" ]; then
+  echo "ro.build.fingerprint=google/bullhead/bullhead:6.0.1/MHC19Q/2705526:user/release-keys"
+else
+  echo "ro.build.fingerprint=$BUILD_FINGERPRINT"
+fi
 if [ -n "$BUILD_THUMBPRINT" ] ; then
   echo "ro.build.thumbprint=$BUILD_THUMBPRINT"
 fi
